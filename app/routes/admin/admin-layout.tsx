@@ -1,18 +1,22 @@
-import React from 'react'
-import { Outlet } from 'react-router'
+import { SidebarComponent } from "@syncfusion/ej2-react-navigations";
+import {NavItems, MobileSidebar} from "../../../components/";  // ✅ adjust path if needed
+import { Outlet } from "react-router-dom";  // ✅ Use react-router-dom!
 
 const Adminlayout = () => {
   return (
     <div className="admin-layout">
-        Mobile
-      <aside className=" w-full max-w-[270px] hidden lh:block">Sidebar</aside>
+      <MobileSidebar/>
+      <aside className="w-full max-w-[270px] hidden lg:block">
+        <SidebarComponent width={270} enableGestures={false}>
+          <NavItems />
+        </SidebarComponent>
+      </aside>
 
       <aside className="children">
-        <Outlet/>
-
+        <Outlet />
       </aside>
     </div>
-  )
-}
+  );
+};
 
-export default Adminlayout
+export default Adminlayout;
