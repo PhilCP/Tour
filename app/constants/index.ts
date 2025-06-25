@@ -181,7 +181,7 @@ export const allTrips = [
   },
   {
     id: 4,
-    name: "Adventure in Westeros",
+    name: "Westeros visit",
     imageUrls: ["/assets/images/sample4.jpg"],
     itinerary: [{ location: "Croatia" }],
     tags: ["Historical", "Culture"],
