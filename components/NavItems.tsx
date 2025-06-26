@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom"; // ✅ correct!
-import { sidebarItems, users } from "~/constants"; // ✅ use your dummy data
+import { sidebarItems, users } from "~/constants";
 import { cn } from "~/lib/utils";
 
 const NavItems = ({ handleClick }: { handleClick?: () => void }) => {
